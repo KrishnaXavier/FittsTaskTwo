@@ -587,8 +587,7 @@ public class FittsTaskTwo
 	}
 }
 
-class FittsTaskTwoFrame extends JFrame implements MouseMotionListener, MouseListener, ComponentListener
-{
+class FittsTaskTwoFrame extends JFrame implements MouseMotionListener, MouseListener, ComponentListener{
 	// the following avoids a "warning" with Java 1.5.0 complier (?)
 	static final long serialVersionUID = 42L;
 

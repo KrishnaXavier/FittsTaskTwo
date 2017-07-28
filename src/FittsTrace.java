@@ -463,7 +463,7 @@ class FittsTraceFrame extends JFrame implements ActionListener, KeyListener, Ite
 		}
 
 		public void drawTargets(Graphics g)
-		{
+		{       System.out.println("drawTargets()");
 			if (t == null || t.length == 0)
 				return;
 
@@ -546,7 +546,7 @@ class FittsTraceFrame extends JFrame implements ActionListener, KeyListener, Ite
 		}
 
 		public void drawTraces(Graphics g)
-		{
+		{       System.out.println("drawTraces()");
 			if (t == null || t.length == 0)
 				return;
 
