@@ -1219,6 +1219,7 @@ class FittsTaskTwoFrame extends JFrame implements MouseMotionListener, MouseList
 		TaskPanel(int aArg, int wArg, int cbArg, int tbArg, Color foregroundColorArg, Color targetColorArg,
 				Color buttonDownColorArg, Color mouseOverColorArg)
 		{
+                        System.out.println("TaskPanel()");
 			foregroundColor = foregroundColorArg;
 			targetColor = targetColorArg;
 			buttonDownColor = buttonDownColorArg;
@@ -1266,6 +1267,7 @@ class FittsTaskTwoFrame extends JFrame implements MouseMotionListener, MouseList
 
 		private void configure()
 		{
+                        System.out.println("configure()");
 			double centreX = this.getWidth() / 2;
 			double centreY = this.getHeight() / 2;
 			for (int i = 0; i < numberOfTargets; ++i)
@@ -1277,6 +1279,8 @@ class FittsTaskTwoFrame extends JFrame implements MouseMotionListener, MouseList
 				target[i].y = y - w / 2;
 				target[i].width = w;
 				target[i].height = w;
+                                System.out.println("Target("+i+"): ");
+                                System.out.println("x: "+target[i].x+", y: "+target[i].y);
 			}
 		}
 

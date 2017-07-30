@@ -520,7 +520,7 @@ class FittsTiltTraceFrame extends JFrame implements ActionListener, ItemListener
 	// -----------------------------------------
 
 	class TracePanel extends JPanel
-	{
+	{                
 		static final long serialVersionUID = 42L;
 
 		TracePanel()
@@ -531,7 +531,7 @@ class FittsTiltTraceFrame extends JFrame implements ActionListener, ItemListener
 		final double BOTTOM_MARGIN = 50.0;
 
 		public void drawTargets(Graphics g)
-		{
+		{       System.out.println("drawTargets()");
 			if (ts == null || ts.length == 0)
 				return;
 
